@@ -1,0 +1,6 @@
+artifact_location: file:///home/main/Documents/Projects/RLPaint/Playground/Cart%20Pole/mlruns/1
+creation_time: 1667432020391
+experiment_id: '1'
+last_update_time: 1667432020391
+lifecycle_stage: active
+name: cart_pole_baseline

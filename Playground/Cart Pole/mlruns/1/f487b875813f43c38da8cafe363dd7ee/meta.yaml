@@ -1,0 +1,15 @@
+artifact_uri: file:///home/main/Documents/Projects/RLPaint/Playground/Cart%20Pole/mlruns/1/f487b875813f43c38da8cafe363dd7ee/artifacts
+end_time: 1667494949813
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: active
+run_id: f487b875813f43c38da8cafe363dd7ee
+run_name: resilient-stag-255
+run_uuid: f487b875813f43c38da8cafe363dd7ee
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1667492888925
+status: 5
+tags: []
+user_id: main

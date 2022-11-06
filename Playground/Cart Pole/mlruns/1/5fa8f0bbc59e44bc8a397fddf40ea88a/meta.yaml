@@ -1,0 +1,15 @@
+artifact_uri: file:///home/main/Documents/Projects/RLPaint/Playground/Cart%20Pole/mlruns/1/5fa8f0bbc59e44bc8a397fddf40ea88a/artifacts
+end_time: 1667500959595
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: active
+run_id: 5fa8f0bbc59e44bc8a397fddf40ea88a
+run_name: skillful-kite-783
+run_uuid: 5fa8f0bbc59e44bc8a397fddf40ea88a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1667499881422
+status: 5
+tags: []
+user_id: main

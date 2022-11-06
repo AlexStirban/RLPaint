@@ -1,0 +1,15 @@
+artifact_uri: file:///home/main/Documents/Projects/RLPaint/Playground/Cart%20Pole/mlruns/1/7f7e09911cf14b648a1a97d9b2048135/artifacts
+end_time: 1667510250033
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: active
+run_id: 7f7e09911cf14b648a1a97d9b2048135
+run_name: ambitious-shrew-339
+run_uuid: 7f7e09911cf14b648a1a97d9b2048135
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1667510127877
+status: 5
+tags: []
+user_id: main

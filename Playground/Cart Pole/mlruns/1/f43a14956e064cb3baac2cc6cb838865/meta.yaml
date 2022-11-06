@@ -1,0 +1,16 @@
+artifact_uri: file:///home/main/Documents/Projects/RLPaint/Playground/Cart%20Pole/mlruns/1/f43a14956e064cb3baac2cc6cb838865/artifacts
+deleted_time: 1667433430667
+end_time: 1667433119412
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: deleted
+run_id: f43a14956e064cb3baac2cc6cb838865
+run_name: rare-roo-611
+run_uuid: f43a14956e064cb3baac2cc6cb838865
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1667432130516
+status: 3
+tags: []
+user_id: main

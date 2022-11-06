@@ -1,0 +1,15 @@
+artifact_uri: file:///home/main/Documents/Projects/RLPaint/Playground/Cart%20Pole/mlruns/1/5b3a9c51e14749789fdd8511ff9752f5/artifacts
+end_time: 1667516771419
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: active
+run_id: 5b3a9c51e14749789fdd8511ff9752f5
+run_name: mercurial-horse-34
+run_uuid: 5b3a9c51e14749789fdd8511ff9752f5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1667516465803
+status: 5
+tags: []
+user_id: main

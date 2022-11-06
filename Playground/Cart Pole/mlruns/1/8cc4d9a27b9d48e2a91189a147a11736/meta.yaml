@@ -1,0 +1,15 @@
+artifact_uri: file:///home/main/Documents/Projects/RLPaint/Playground/Cart%20Pole/mlruns/1/8cc4d9a27b9d48e2a91189a147a11736/artifacts
+end_time: 1667498211707
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: active
+run_id: 8cc4d9a27b9d48e2a91189a147a11736
+run_name: gentle-horse-453
+run_uuid: 8cc4d9a27b9d48e2a91189a147a11736
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1667498155214
+status: 5
+tags: []
+user_id: main

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/main/Documents/Projects/RLPaint/Playground/Cart%20Pole/mlruns/1/2f0efc98601541d6b331d79cb43e1c4a/artifacts
+end_time: 1667510535547
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: active
+run_id: 2f0efc98601541d6b331d79cb43e1c4a
+run_name: placid-panda-754
+run_uuid: 2f0efc98601541d6b331d79cb43e1c4a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1667510460481
+status: 5
+tags: []
+user_id: main

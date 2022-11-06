@@ -1,0 +1,15 @@
+artifact_uri: file:///home/main/Documents/Projects/RLPaint/Playground/Cart%20Pole/mlruns/1/fc1d6b2ec9054d7ebeaa36709231ba3d/artifacts
+end_time: 1667508905803
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: active
+run_id: fc1d6b2ec9054d7ebeaa36709231ba3d
+run_name: aged-eel-153
+run_uuid: fc1d6b2ec9054d7ebeaa36709231ba3d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1667502026372
+status: 3
+tags: []
+user_id: main

@@ -1,0 +1,15 @@
+artifact_uri: file:///home/main/Documents/Projects/RLPaint/Playground/Cart%20Pole/mlruns/1/980c79b720614c8185f29d4f896baeef/artifacts
+end_time: 1667516450211
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: active
+run_id: 980c79b720614c8185f29d4f896baeef
+run_name: hilarious-owl-272
+run_uuid: 980c79b720614c8185f29d4f896baeef
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1667510615279
+status: 5
+tags: []
+user_id: main

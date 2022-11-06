@@ -1,0 +1,15 @@
+artifact_uri: file:///home/main/Documents/Projects/RLPaint/Playground/Cart%20Pole/mlruns/1/e95cad6229814ca989e99f3fdcc038d2/artifacts
+end_time: 1667501598728
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: active
+run_id: e95cad6229814ca989e99f3fdcc038d2
+run_name: luxuriant-moth-788
+run_uuid: e95cad6229814ca989e99f3fdcc038d2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1667500964814
+status: 5
+tags: []
+user_id: main

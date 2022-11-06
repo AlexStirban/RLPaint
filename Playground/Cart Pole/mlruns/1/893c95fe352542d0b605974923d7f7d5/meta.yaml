@@ -1,0 +1,15 @@
+artifact_uri: file:///home/main/Documents/Projects/RLPaint/Playground/Cart%20Pole/mlruns/1/893c95fe352542d0b605974923d7f7d5/artifacts
+end_time: 1667499126493
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: active
+run_id: 893c95fe352542d0b605974923d7f7d5
+run_name: luminous-toad-202
+run_uuid: 893c95fe352542d0b605974923d7f7d5
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1667499108363
+status: 5
+tags: []
+user_id: main

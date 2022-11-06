@@ -1,0 +1,15 @@
+artifact_uri: file:///home/main/Documents/Projects/RLPaint/Playground/Cart%20Pole/mlruns/1/7a0271ae898342caa59d6951037be43f/artifacts
+end_time: 1667495312253
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: active
+run_id: 7a0271ae898342caa59d6951037be43f
+run_name: sincere-vole-297
+run_uuid: 7a0271ae898342caa59d6951037be43f
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1667495293262
+status: 3
+tags: []
+user_id: main

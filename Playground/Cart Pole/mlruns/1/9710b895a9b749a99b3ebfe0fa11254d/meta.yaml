@@ -1,0 +1,15 @@
+artifact_uri: file:///home/main/Documents/Projects/RLPaint/Playground/Cart%20Pole/mlruns/1/9710b895a9b749a99b3ebfe0fa11254d/artifacts
+end_time: 1667495208324
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: active
+run_id: 9710b895a9b749a99b3ebfe0fa11254d
+run_name: colorful-gull-861
+run_uuid: 9710b895a9b749a99b3ebfe0fa11254d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1667495149246
+status: 3
+tags: []
+user_id: main

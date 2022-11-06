@@ -1,0 +1,16 @@
+artifact_uri: file:///home/main/Documents/Projects/RLPaint/Playground/Cart%20Pole/mlruns/1/7f2407248a4344bb92eb26ed3c5bc467/artifacts
+deleted_time: 1667433430665
+end_time: 1667433196825
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: deleted
+run_id: 7f2407248a4344bb92eb26ed3c5bc467
+run_name: marvelous-whale-192
+run_uuid: 7f2407248a4344bb92eb26ed3c5bc467
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1667433154608
+status: 3
+tags: []
+user_id: main

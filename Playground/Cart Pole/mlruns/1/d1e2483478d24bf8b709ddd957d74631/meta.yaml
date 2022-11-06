@@ -1,0 +1,15 @@
+artifact_uri: file:///home/main/Documents/Projects/RLPaint/Playground/Cart%20Pole/mlruns/1/d1e2483478d24bf8b709ddd957d74631/artifacts
+end_time: 1667440568238
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: active
+run_id: d1e2483478d24bf8b709ddd957d74631
+run_name: whimsical-toad-315
+run_uuid: d1e2483478d24bf8b709ddd957d74631
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1667433196827
+status: 3
+tags: []
+user_id: main

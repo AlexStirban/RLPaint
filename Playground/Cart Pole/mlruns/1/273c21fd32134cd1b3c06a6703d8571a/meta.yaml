@@ -1,0 +1,15 @@
+artifact_uri: file:///home/main/Documents/Projects/RLPaint/Playground/Cart%20Pole/mlruns/1/273c21fd32134cd1b3c06a6703d8571a/artifacts
+end_time: 1667498147266
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: active
+run_id: 273c21fd32134cd1b3c06a6703d8571a
+run_name: merciful-hawk-983
+run_uuid: 273c21fd32134cd1b3c06a6703d8571a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1667495312255
+status: 5
+tags: []
+user_id: main

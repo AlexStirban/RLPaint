@@ -1,0 +1,15 @@
+artifact_uri: file:///home/main/Documents/Projects/RLPaint/Playground/Cart%20Pole/mlruns/1/b2a24844d0504de9929586d6c7b5d88a/artifacts
+end_time: 1667517683927
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: active
+run_id: b2a24844d0504de9929586d6c7b5d88a
+run_name: likeable-hound-439
+run_uuid: b2a24844d0504de9929586d6c7b5d88a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1667517345664
+status: 5
+tags: []
+user_id: main

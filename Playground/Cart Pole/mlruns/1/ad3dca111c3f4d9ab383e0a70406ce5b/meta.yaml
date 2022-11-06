@@ -1,0 +1,15 @@
+artifact_uri: file:///home/main/Documents/Projects/RLPaint/Playground/Cart%20Pole/mlruns/1/ad3dca111c3f4d9ab383e0a70406ce5b/artifacts
+end_time: 1667499794351
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: active
+run_id: ad3dca111c3f4d9ab383e0a70406ce5b
+run_name: industrious-kit-214
+run_uuid: ad3dca111c3f4d9ab383e0a70406ce5b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1667499599857
+status: 5
+tags: []
+user_id: main

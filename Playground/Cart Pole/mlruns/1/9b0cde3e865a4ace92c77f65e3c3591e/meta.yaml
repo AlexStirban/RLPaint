@@ -1,0 +1,15 @@
+artifact_uri: file:///home/main/Documents/Projects/RLPaint/Playground/Cart%20Pole/mlruns/1/9b0cde3e865a4ace92c77f65e3c3591e/artifacts
+end_time: 1667517344039
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: active
+run_id: 9b0cde3e865a4ace92c77f65e3c3591e
+run_name: brawny-goat-928
+run_uuid: 9b0cde3e865a4ace92c77f65e3c3591e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1667516823328
+status: 5
+tags: []
+user_id: main
