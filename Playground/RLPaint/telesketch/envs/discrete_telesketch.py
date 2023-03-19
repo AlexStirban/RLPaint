@@ -4,11 +4,11 @@
 from math import cos, sin, pi
 
 # Full imports
-import gym
+import gymnasium as gym
 import cv2
 
 # Partial imports
-from gym import spaces
+from gymnasium import spaces
 from numpy import linalg as LA
 
 # Aliased imports
@@ -21,11 +21,12 @@ class DiscreteTelesketchEnv(gym.Env):
 
     def __init__(self, 
                 ref_canvas, 
-                sim_func, 
+                sim_func,
+                condition=None,
                 segment_length=5, 
                 stroke_thickness=5, 
                 patch_size=(25, 25),
-                threshold=None, 
+                factor=1,
                 render_mode=None) -> None:
 
         # Save ref image & sim func
@@ -33,7 +34,8 @@ class DiscreteTelesketchEnv(gym.Env):
         self.sim_func = sim_func
         self._patch_size = patch_size
         self._reset_called = False
-        self._threshold = threshold
+        self._condition = condition
+        self._factor = factor
 
         # Save segment params
         self.segment_length = segment_length
@@ -52,6 +54,9 @@ class DiscreteTelesketchEnv(gym.Env):
                 "cnv_patch": spaces.Box(0, 1, shape=patch_size, dtype=np.float32)
             }
         )
+
+        self._step_counter = 0
+        self._stuck_counter = 0
 
         # Assert correct render mode is selected
         assert render_mode is None or render_mode in self.metadata["render_modes"], "{render_mode} not supported"
@@ -83,18 +88,19 @@ class DiscreteTelesketchEnv(gym.Env):
         }
     
     def _get_info(self):
-        return {"sim": self.sim_func(self._canvas, self.ref_canvas)}
+        return {"sim": self.sim_func(self.ref_canvas, self._canvas).item(0)}
 
     def _compute_rewards(self, ref_canvas, new_canvas, old_canvas, new_loc):
         old_diff = self.sim_func(ref_canvas, old_canvas)
         new_diff = self.sim_func(ref_canvas, new_canvas)
 
-        #if LA.norm(self._loc - new_loc) < 1:
-        #    return -0.003
+        if abs(old_diff - new_diff) < 1e-3:
+            self._stuck_counter += 1
+            return 0
 
         # Penalize not moving
-        diff = old_diff - new_diff
-        return diff
+        diff = (old_diff - new_diff).item()
+        return diff if diff > 0 else diff * 0.4 #* (1 - np.exp(-self._step_counter * 2e-3 - 1))
     
     def _compute_patch(self, canvas: np.ndarray, loc: np.ndarray, size: np.ndarray) -> np.ndarray:
         # Define square patch
@@ -127,6 +133,8 @@ class DiscreteTelesketchEnv(gym.Env):
     def reset(self, loc=(0, 0), seed=None,):
         super().reset(seed=seed)
 
+        self._step_counter = 0
+        self._stuck_counter = 0
         self._loc = np.array(loc)
         self._canvas = np.full(self.ref_canvas.shape, 1, dtype=np.float32)
         
@@ -155,11 +163,22 @@ class DiscreteTelesketchEnv(gym.Env):
         # Update state
         self._loc = new_loc
         self._canvas = new_canvas
+        self._step_counter += 1
 
-        # Check if we're done
+        
         done = False
-        if self._threshold is not None:
-            done = self.sim_func(self.ref_canvas, new_canvas) > self._threshold 
+
+        # Check if we're close to the actual image
+        if self._condition is not None:
+            done = self._condition(self.sim_func(self.ref_canvas, new_canvas))
+
+            if done:
+                reward = 100
+        
+        # Check if we're stuck
+        if self._stuck_counter > 20:
+            done = True
+            reward = -10
 
         return self._get_obs(), reward, done, self._get_info()
 
