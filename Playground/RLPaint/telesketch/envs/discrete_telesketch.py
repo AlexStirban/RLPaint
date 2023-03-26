@@ -80,11 +80,11 @@ class DiscreteTelesketchEnv(gym.Env):
         ref_patch = self._compute_patch(self.ref_canvas, self._loc, self._patch_size)
         d_map = self._get_distance_map()
 
-        return {"loc": d_map, 
-                "ref": self.ref_canvas, 
-                "cnv": self._canvas,
-                "ref_patch": ref_patch,
-                "cnv_patch": cnv_patch
+        return {"loc": d_map.astype(np.float32), 
+                "ref": self.ref_canvas.astype(np.float32), 
+                "cnv": self._canvas.astype(np.float32),
+                "ref_patch": ref_patch.astype(np.float32),
+                "cnv_patch": cnv_patch.astype(np.float32)
         }
     
     def _get_info(self):
@@ -96,11 +96,11 @@ class DiscreteTelesketchEnv(gym.Env):
 
         if abs(old_diff - new_diff) < 1e-3:
             self._stuck_counter += 1
-            return 0
+            return -1
 
         # Penalize not moving
-        diff = (old_diff - new_diff).item()
-        return diff if diff > 0 else diff * 0.4 #* (1 - np.exp(-self._step_counter * 2e-3 - 1))
+        diff = (old_diff - new_diff).item() * 10
+        return diff if diff > 0 else diff * 0.4 
     
     def _compute_patch(self, canvas: np.ndarray, loc: np.ndarray, size: np.ndarray) -> np.ndarray:
         # Define square patch
@@ -170,7 +170,7 @@ class DiscreteTelesketchEnv(gym.Env):
 
         # Check if we're close to the actual image
         if self._condition is not None:
-            done = self._condition(self.sim_func(self.ref_canvas, new_canvas))
+            done = self._condition(self.ref_canvas, new_canvas)
 
             if done:
                 reward = 100
@@ -178,7 +178,7 @@ class DiscreteTelesketchEnv(gym.Env):
         # Check if we're stuck
         if self._stuck_counter > 20:
             done = True
-            reward = -10
+            reward = -100
 
         return self._get_obs(), reward, done, self._get_info()
 
