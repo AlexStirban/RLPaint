@@ -99,8 +99,8 @@ class DiscreteTelesketchEnv(gym.Env):
             return -1
 
         # Penalize not moving
-        diff = (old_diff - new_diff).item() * 10
-        return diff if diff > 0 else diff * 0.4 
+        diff = (old_diff - new_diff).item()
+        return diff if diff > 0 else diff * 0.6
     
     def _compute_patch(self, canvas: np.ndarray, loc: np.ndarray, size: np.ndarray) -> np.ndarray:
         # Define square patch
